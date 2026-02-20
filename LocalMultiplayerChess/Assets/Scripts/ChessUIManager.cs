@@ -57,6 +57,5 @@ public class ChessUIManager : NetworkBehaviour
     public void OnConnected()
     {
         DisableAllScreens();
-        //teamSelectionScreen.SetActive(true);
     }
 }

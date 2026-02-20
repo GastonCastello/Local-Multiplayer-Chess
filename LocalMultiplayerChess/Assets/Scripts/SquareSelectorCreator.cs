@@ -16,7 +16,7 @@ public class SquareSelectorCreator : MonoBehaviour
 
         foreach (var item in squareData)
         {
-            GameObject selector = Instantiate(selectorPrefab, new Vector3(item.Key.x-0.01f,item.Key.y-0.045f,item.Key.z+0.004f), Quaternion.identity); // un poco desfasado arreglado con valores hardcodeados
+            GameObject selector = Instantiate(selectorPrefab, new Vector3(item.Key.x-0.01f,item.Key.y-0.045f,item.Key.z+0.004f), Quaternion.identity);
             instantiatedSelectors.Add(selector);
             foreach (var setter in selector.GetComponentsInChildren<MaterialSetter>())
             {

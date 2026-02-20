@@ -41,7 +41,7 @@ public class Board : NetworkBehaviour
     {
         int x = Mathf.FloorToInt(inputPos.x / squareSize) + boardSize / 2;
         int y = Mathf.FloorToInt(inputPos.z / squareSize) + boardSize / 2;
-        return new Vector2Int(x-1, y); // error raro solucion rara
+        return new Vector2Int(x-1, y);
     }
 
     public void OnGameRestarted()
